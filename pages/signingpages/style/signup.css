@@ -1,0 +1,219 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Kufi+Arabic:wght@100..900&display=swap');
+
+body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Noto Kufi Arabic';
+        /* overflow-y: hidden; */
+}
+
+
+#center_logo {
+    display: none;
+}
+
+
+.top_side {
+    margin-bottom: 1%;
+    padding: 4% 1%;
+    display: none;
+    background-color: #5AC99D;
+}
+
+
+
+.back_cont button {
+    color: #4E585F;
+    font-size: 20px;
+    font-weight: bold;
+    background-color: #ffff;
+    border: none;
+    margin-right: 50%;
+    
+}
+
+.right_side {
+    margin: auto;
+    margin-top: 7%;
+}
+
+.right_side h1 {
+    color: #2a2a2a;
+    font-weight: bold;
+}
+
+.form_cont {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.form-label {
+    color: #3A3A3A;
+    font-weight: 500;
+    font-size: large;
+    margin-right: 3%;
+}
+
+.form-select {
+    background-color: #F4F5FB;
+}
+
+
+.form-control {
+    background-color: #F4F5FB;
+    border: 1px solid #CCCCCC;
+    height: 48px;
+    border-radius: 9px;
+    
+}
+
+.form-control::placeholder {
+    color: #787878;
+    font-size: 17px;
+    font-weight: 400;
+}
+#name {
+    background-image: url("/Registration system/img/user.png");
+    background-repeat: no-repeat;
+    background-size: 21px;
+    padding-right: 50px;
+    background-position: center right 15px;
+}
+
+#email_input {
+    background-image: url("/Registration system/img/envelope.png");
+    background-repeat: no-repeat;
+    background-size: 21px;
+    padding-right: 50px;
+    background-position: center right 15px;
+}
+
+
+#password_input {
+    background-image: url("/Registration system/img/lock.png");
+    background-repeat: no-repeat;
+    background-size:21px;
+    padding-right: 50px;
+    background-position: center right 15px;
+}
+
+
+
+
+
+#form_btn {
+    border-radius: 8px;
+    background-color: #5AC99D;
+    border: 1px solid #5AC99D;
+    width: 100%;
+    font-weight: 800;
+    font-size: 18px;
+    padding: 3% 0;
+}
+
+
+
+.left_side {
+    display: flex;
+    z-index: 9;
+    background-color: #5AC99D;
+    min-height: 750px;
+    width: 45%;
+    margin-right: auto;
+    transition: .25s ease;
+    
+}
+
+.left_side img {
+    margin: auto;
+}
+
+.right_side {
+    margin-left: auto;
+}
+
+input {
+    background-color: #f4f5f8;
+}
+
+
+.requirements {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* ----------------- */
+.requirements p {
+    color: #787878;
+    font-size: 17px;
+}
+
+.circle_error {
+    border: 2px solid #5AC99D;
+    padding: 2px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    margin-left: 9px;
+    
+}
+
+.circle_success {
+    /* border: 2px solid #4FAE88; */
+    background-color: #4FAE88;
+    padding: 2px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    margin-left: 9px;
+    
+}
+
+.letters {
+    display: flex;
+}
+
+.numbers {
+    display: flex;
+}
+
+.symbols {
+    display: flex;
+}
+
+@media only screen and (max-width: 1000px) {
+    .left_side {
+        display: none;
+    }
+    
+    #center_logo {
+        display: block;
+        margin: auto;
+    }
+    
+    .top_side {
+        
+            display: block;
+            margin-bottom: 10%;
+            height: 1%;
+            /* border-bottom-left-radius: 13px;
+            border-bottom-right-radius: 13px; */
+    
+        
+    }
+    @media only screen and (max-width: 600px) {
+        .back_cont {
+            display: none;
+        }
+        .top_side{
+            border-bottom-left-radius: 13px;
+            border-bottom-right-radius: 13px;
+    
+        }
+    }
+    @media only screen and (max-width: 1355px) {
+        .back_cont {
+            display: none;
+        }
+    }
+}
