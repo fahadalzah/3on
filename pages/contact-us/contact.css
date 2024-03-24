@@ -1,7 +1,8 @@
-@import url('https://fonts.googleapis.com/css2?family=Noto+Kufi+Arabic:wght@100..900&display=swap');
-/* this is the editor for the left side of the page */
+
+@import url('https://fonts.googleapis.com/css2?family=Alexandria:wght@100..900&display=swap');
+/*  section one / left / contact page */
 *{
-    font-family: Noto Kufi Arabic;
+    font-family: 'Alexandria';
 }
 .left {
     width: 40%;
@@ -9,13 +10,15 @@
     text-align: start;
     animation: slide .5s;
 }
-
+.left h1 {
+    font-size: xx-large;
+}
 @keyframes slide {
     from {transform: translateY(50%);}
     to {transform: translateY(0%);}
 }
 
-/* this is the social contact in the left side of the page we made it into a flex box and edited its h1 and p*/
+/*  section one / social-contact / contact page*/
 .social-contact {
     display: flex;
     align-items: center;
@@ -34,16 +37,12 @@
     height: 40px;
 }
 
-/* this is the editor for the main content they are the h1 2 p they are the discription of for the page */
+/*  section one / right / H1 & P /contact page */
 .main-content {
     padding: 10px;
     color: #1e1e1e;
 }
-/* this is the editor for all the h1 in the left side */
-.left h1 {
-    font-size: xx-large;
-}
-/* this is the main this contains the left and roght side we made it into a flexbox */
+/*  section one / left & right / contact page */
 main {
     height: 500px;
     width: 1000px;
@@ -57,7 +56,7 @@ main {
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
     animation: slide .5s;
 }
-/* this is the editor for all input and textarea in the page we changed its color height width...exc */
+/*  section one / left / inputs & textarea / contact page */
 main input , main textarea {
     margin-top: 1px;
     color: #1e1e1e;
@@ -69,23 +68,23 @@ main input , main textarea {
     padding: 5px;
     font-size: medium;
 }
-/* this is where we edited all textareas and inputs :focus so they turn blue after clicked on */
 main input:focus , main textarea:focus {
     outline: #5ac99d solid 2px;
     border: none;
 }
-/* this is the textarea max and min editor */
 textarea {
     max-width: 300px;
     max-height: 175px;
     min-height: 40px;
     min-width: 270px  ;
 }
-/* this is where we edited the entire body */
+/*  section one / body / contact page */
+
 body {
     background-color: whitesmoke;
 }
-/* and lastly theis is the submit button editor we edited its font border boldness hover...exc */
+
+/*  section one / right / button / contact page */
 .submit-btn {
     font-weight: 500;
     transition: .25s ease-in-out;
@@ -147,6 +146,9 @@ body {
     margin-right: auto;
     padding: 5px 4%;
     margin-left: 3%;
+}
+#signup:hover{
+    background-color: #3d9270;
 }
 .right{
     height: 410px;
@@ -211,5 +213,21 @@ a{
         flex-direction: row;
         align-items: center;
         justify-content: center;
+    }
+}
+@media only screen and (max-width: 991px){
+    .collapse{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
+    }
+    #signup{
+        width: 100%;
+    }
+    .navbar-nav{
+        margin: 0;
+        padding: 0;
     }
 }
